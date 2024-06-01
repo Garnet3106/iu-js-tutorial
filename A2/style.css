@@ -1,0 +1,94 @@
+.light-theme {
+  --base-color: white;
+  --main-color: #3565b7;
+  --dark-btn-color: #122851;
+  --text-color: black;
+  --inverted-text-color: white;
+}
+
+.dark-theme {
+  --base-color: #1c1c22;
+  --main-color: #37373d;
+  --dark-btn-color: #515162;
+  --text-color: white;
+  --inverted-text-color: white;
+}
+
+body {
+  align-items: center;
+  background-color: var(--base-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.header {
+  align-items: center;
+  background-color: var(--main-color);
+  color: var(--inverted-text-color);
+  display: flex;
+  height: 45px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.theme-btn {
+  align-items: center;
+  background-color: var(--dark-btn-color);
+  border-radius: 8px;
+  display: flex;
+  cursor: pointer;
+  font-size: x-small;
+  height: 30px;
+  line-height: 1.2em;
+  margin-right: 6px;
+  padding: 3px 8px;
+  text-align: center;
+  user-select: none;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.time {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.btn-row {
+  display: flex;
+  gap: 0 15px;
+}
+
+.btn {
+  background-color: var(--main-color);
+  border-radius: 5px;
+  color: var(--inverted-text-color);
+  cursor: pointer;
+  font-size: large;
+  padding: 6px 12px;
+  transition: opacity 100ms;
+  user-select: none;
+}
+
+.btn:active {
+  opacity: 80%;
+}
+
+.footer {
+  color: gray;
+  font-size: small;
+  padding: 4px 0;
+}
